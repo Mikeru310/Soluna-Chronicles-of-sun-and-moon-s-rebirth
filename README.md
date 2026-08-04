@@ -41,12 +41,16 @@ The project was developed as a capstone requirement to demonstrate effective gam
 
 *Photos from our campus playtest event, where students got to try out SolLuna and give feedback.*
 
-<!-- Replace these placeholder images with your actual event photos, keeping the same filenames or updating the paths below -->
-
-| | |
-|---|---|
-| ![Playtest 1](screenshots/Playtest_1.jpg) | ![Playtest 2](screenshots/Playtest2.jpg) |
-| ![Playtest 3](screenshots/Playtest3.jpg) | ![Playtest 4](screenshots/Playtest4.jpg) |
+<table>
+  <tr>
+    <td><img src="screenshots/Playtest_1.jpg" width="400"></td>
+    <td><img src="screenshots/Playtest2.jpg" width="400"></td>
+  </tr>
+  <tr>
+    <td><img src="screenshots/Playtest3.jpg" width="400"></td>
+    <td><img src="screenshots/Playtest4.jpg" width="400"></td>
+  </tr>
+</table>
 
 ## Acknowledgments
 
