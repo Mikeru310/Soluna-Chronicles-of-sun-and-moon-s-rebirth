@@ -45,7 +45,7 @@ The project was developed as a capstone requirement to demonstrate effective gam
 
 | | |
 |---|---|
-| ![Playtest 1](screenshots/playtest_01.png) | ![Playtest 2](screenshots/playtest_02.png) |
+| ![Playtest 1](Soluna-Chronicles-of-sun-and-moon-s-rebirth/Playtest_1.jpg) | ![Playtest 2](screenshots/playtest_02.png) |
 | ![Playtest 3](screenshots/playtest_03.png) | ![Playtest 4](screenshots/playtest_04.png) |
 
 ## Acknowledgments
