@@ -48,7 +48,7 @@ The project was developed as a capstone requirement to demonstrate effective gam
   </tr>
   <tr>
     <td><img src="screenshots/Playtest3.jpg" width="400"></td>
-    <td><img src="screenshots/Playtest4.jpg" width="400" height="450"></td>
+    <td><img src="screenshots/Playtest4.jpg" width="400"></td>
   </tr>
 </table>
 
