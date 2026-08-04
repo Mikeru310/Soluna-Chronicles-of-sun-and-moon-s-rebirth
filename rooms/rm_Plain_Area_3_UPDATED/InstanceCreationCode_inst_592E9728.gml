@@ -1,0 +1,1 @@
+patrol_path = plain_pathing_3;

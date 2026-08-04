@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"Final_Quest___Game_Over_Intro",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":10.992358,
+  "exportDir":"",
+  "name":"Final_Quest___Game_Over_Intro",
+  "parent":{
+    "name":"Sounds",
+    "path":"folders/Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"Final_Quest___Game_Over_Intro.ogg",
+  "volume":1.0,
+}

@@ -1,0 +1,38 @@
+{
+  "$GMTileSet":"v1",
+  "%Name":"ts_Houses_1UPDATED",
+  "autoTileSets":[],
+  "macroPageTiles":{
+    "SerialiseHeight":0,
+    "SerialiseWidth":0,
+    "TileSerialiseData":[],
+  },
+  "name":"ts_Houses_1UPDATED",
+  "out_columns":27,
+  "out_tilehborder":2,
+  "out_tilevborder":2,
+  "parent":{
+    "name":"spr_ts_Terrain_Act_2_Updated",
+    "path":"folders/Rooms/Main Maps with Interior/Act_2_Updated/spr_ts_Terrain_Act_2_Updated.yy",
+  },
+  "resourceType":"GMTileSet",
+  "resourceVersion":"2.0",
+  "spriteId":{
+    "name":"Spr_Houses_1UPDATED",
+    "path":"sprites/Spr_Houses_1UPDATED/Spr_Houses_1UPDATED.yy",
+  },
+  "spriteNoExport":false,
+  "textureGroupId":{
+    "name":"Default",
+    "path":"texturegroups/Default",
+  },
+  "tileAnimationFrames":[],
+  "tileAnimationSpeed":15.0,
+  "tileHeight":16,
+  "tilehsep":0,
+  "tilevsep":0,
+  "tileWidth":16,
+  "tilexoff":0,
+  "tileyoff":0,
+  "tile_count":756,
+}

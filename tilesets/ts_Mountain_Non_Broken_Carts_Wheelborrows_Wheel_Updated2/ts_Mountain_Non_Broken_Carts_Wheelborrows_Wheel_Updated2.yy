@@ -1,0 +1,38 @@
+{
+  "$GMTileSet":"v1",
+  "%Name":"ts_Mountain_Non_Broken_Carts_Wheelborrows_Wheel_Updated2",
+  "autoTileSets":[],
+  "macroPageTiles":{
+    "SerialiseHeight":0,
+    "SerialiseWidth":0,
+    "TileSerialiseData":[],
+  },
+  "name":"ts_Mountain_Non_Broken_Carts_Wheelborrows_Wheel_Updated2",
+  "out_columns":19,
+  "out_tilehborder":2,
+  "out_tilevborder":2,
+  "parent":{
+    "name":"spr_ts_Terrain_Act_4_Updated",
+    "path":"folders/Rooms/Main Maps with Interior/Act_4_Updated/spr_ts_Terrain_Act_4_Updated.yy",
+  },
+  "resourceType":"GMTileSet",
+  "resourceVersion":"2.0",
+  "spriteId":{
+    "name":"spr_Mountain_Non_Broken_Carts_Wheelborrows_Wheel_Updated2",
+    "path":"sprites/spr_Mountain_Non_Broken_Carts_Wheelborrows_Wheel_Updated2/spr_Mountain_Non_Broken_Carts_Wheelborrows_Wheel_Updated2.yy",
+  },
+  "spriteNoExport":false,
+  "textureGroupId":{
+    "name":"Default",
+    "path":"texturegroups/Default",
+  },
+  "tileAnimationFrames":[],
+  "tileAnimationSpeed":15.0,
+  "tileHeight":16,
+  "tilehsep":0,
+  "tilevsep":0,
+  "tileWidth":16,
+  "tilexoff":0,
+  "tileyoff":0,
+  "tile_count":360,
+}

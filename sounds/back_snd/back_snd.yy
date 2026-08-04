@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"back_snd",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.83591837,
+  "exportDir":"",
+  "name":"back_snd",
+  "parent":{
+    "name":"UI sounds",
+    "path":"folders/Sounds/sound_effects/UI sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"back_snd.mp3",
+  "volume":1.0,
+}

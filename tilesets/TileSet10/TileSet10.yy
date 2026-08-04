@@ -1,0 +1,38 @@
+{
+  "$GMTileSet":"v1",
+  "%Name":"TileSet10",
+  "autoTileSets":[],
+  "macroPageTiles":{
+    "SerialiseHeight":0,
+    "SerialiseWidth":0,
+    "TileSerialiseData":[],
+  },
+  "name":"TileSet10",
+  "out_columns":9,
+  "out_tilehborder":2,
+  "out_tilevborder":2,
+  "parent":{
+    "name":"Mark's animated sprites",
+    "path":"folders/Sprites/Old Sprites/Mark's animated sprites.yy",
+  },
+  "resourceType":"GMTileSet",
+  "resourceVersion":"2.0",
+  "spriteId":{
+    "name":"Forest_Tileset_2_Area",
+    "path":"sprites/Forest_Tileset_2_Area/Forest_Tileset_2_Area.yy",
+  },
+  "spriteNoExport":false,
+  "textureGroupId":{
+    "name":"Default",
+    "path":"texturegroups/Default",
+  },
+  "tileAnimationFrames":[],
+  "tileAnimationSpeed":15.0,
+  "tileHeight":7,
+  "tilehsep":0,
+  "tilevsep":0,
+  "tileWidth":7,
+  "tilexoff":0,
+  "tileyoff":0,
+  "tile_count":81,
+}

@@ -1,0 +1,20 @@
+50% done
+
+needs to be fixed:
+rune description
+add control beneath textbox //added
+moving sprites when cutscene plays //added
+error visual bug in stat menu
+
+
+needs to be added:
+battle transitions
+tutorial //added
+more skills
+more enemy units
+cutscenes //added
+gold drops
+
+
+
+crucial - Save/Load //needed to be added ASAP

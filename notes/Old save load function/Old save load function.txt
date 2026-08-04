@@ -1,0 +1,219 @@
+note to anyone
+if u fuck it up this is original save load
+
+
+function save_game_json() {
+    if (!variable_global_exists("chests_opened")) global.chests_opened = [];
+    if (!variable_global_exists("cutscenes_played")) global.cutscenes_played = [];
+    if (!variable_global_exists("follower_unlocked")) global.follower_unlocked = false;
+    if (!variable_global_exists("follower_present")) global.follower_present = false;
+
+    // Rune safety
+    if (!variable_global_exists("haru_runes")) global.haru_runes = [0, 0, 0];
+    if (!variable_global_exists("maya_runes")) global.maya_runes = [0, 0, 0];
+
+    // Boss array safety
+    if (!variable_global_exists("bosses")) global.bosses = [false, false, false, false];
+
+    var save = {
+        x: obj_player.x,
+        y: obj_player.y,
+        room: room,
+
+        inventory: [],
+        party: [],
+
+        chests_opened: global.chests_opened,
+        cutscenes_played: global.cutscenes_played,
+
+        follower_unlocked: global.follower_unlocked,
+        follower_present: instance_exists(obj_follower),
+
+        haru_runes: global.haru_runes,
+        maya_runes: global.maya_runes,
+
+        // ⭐ NEW: Save boss defeat progress
+        bosses: global.bosses
+    };
+
+    // --- Save Inventory ---
+    var inv_len = array_length(global.inventory);
+    for (var i = 0; i < inv_len; i++) {
+        var entry = global.inventory[i];
+        var item_struct = entry[0];
+        var amount = entry[1];
+
+        var item_key = "";
+        var names = variable_struct_get_names(global.items);
+        for (var n = 0; n < array_length(names); n++) {
+            var nm = names[n];
+            if (variable_struct_get(global.items, nm) == item_struct) {
+                item_key = nm;
+                break;
+            }
+        }
+        if (item_key == "") item_key = string(item_struct.name);
+
+        array_push(save.inventory, {
+            key: item_key,
+            amount: amount
+        });
+    }
+
+    // --- Save Party ---
+    var party_len = array_length(global.party);
+    for (var i = 0; i < party_len; i++) {
+        var member = global.party[i];
+
+        var action_names = [];
+        var action_keys = variable_struct_get_names(global.actionLibrary);
+
+        for (var a = 0; a < array_length(member.actions); a++) {
+            var act = member.actions[a];
+            var key_found = "";
+
+            for (var k = 0; k < array_length(action_keys); k++) {
+                var key = action_keys[k];
+                if (variable_struct_get(global.actionLibrary, key) == act) {
+                    key_found = key;
+                    break;
+                }
+            }
+
+            if (key_found == "") key_found = "unknown_action";
+            array_push(action_names, key_found);
+        }
+
+        array_push(save.party, {
+            name: member.name,
+            hp: member.hp,
+            hpmax: member.hpmax,
+            mp: member.mp,
+            mpmax: member.mpmax,
+            strength: member.strength,
+            level: member.level,
+            currentXp: member.currentXp,
+            xpLevelUp: member.xpLevelUp,
+            actions: action_names
+        });
+    }
+
+    // -------- WRITE FILE --------
+    var json_string = json_stringify(save);
+    var file = file_text_open_write("save.json");
+    file_text_write_string(file, json_string);
+    file_text_close(file);
+
+    show_message("JSON Save Complete!");
+}
+
+
+
+
+
+
+
+
+
+
+load
+
+
+
+function load_game_json() {
+    if (!file_exists("save.json")) {
+        show_message("Save file not found.");
+        return;
+    }
+
+    var file = file_text_open_read("save.json");
+    var data = json_parse(file_text_read_string(file));
+    file_text_close(file);
+
+    global.load_x = data.x;
+    global.load_y = data.y;
+    global.load_room = data.room;
+
+    // --- Load Inventory ---
+    global.inventory = [];
+    for (var i = 0; i < array_length(data.inventory); i++) {
+        var entry = data.inventory[i];
+        var item_key = entry.key;
+        var amount = entry.amount;
+
+        if (variable_struct_exists(global.items, item_key)) {
+            var item_struct = variable_struct_get(global.items, item_key);
+            array_push(global.inventory, [item_struct, amount]);
+        } else {
+            var placeholder = {
+                name: item_key,
+                description: "Unknown item",
+                sprite: noone,
+                func: function() {}
+            };
+            array_push(global.inventory, [placeholder, amount]);
+        }
+    }
+
+    // --- Load Party ---
+    if (variable_struct_exists(data, "party")) {
+        for (var i = 0; i < array_length(data.party); i++) {
+            if (i < array_length(global.party)) {
+                var loaded = data.party[i];
+                var member = global.party[i];
+
+                member.hp = loaded.hp;
+                member.hpmax = loaded.hpmax;
+                member.mp = loaded.mp;
+                member.mpmax = loaded.mpmax;
+                member.strength = loaded.strength;
+                member.level = loaded.level;
+                member.currentXp = loaded.currentXp;
+                member.xpLevelUp = loaded.xpLevelUp;
+
+                // restore actions
+                member.actions = [];
+                for (var a = 0; a < array_length(loaded.actions); a++) {
+                    var act_name = loaded.actions[a];
+                    if (variable_struct_exists(global.actionLibrary, act_name)) {
+                        array_push(member.actions, variable_struct_get(global.actionLibrary, act_name));
+                    }
+                }
+            }
+        }
+    }
+
+    // --- Load chests & cutscenes ---
+    global.chests_opened = variable_struct_exists(data, "chests_opened") ? data.chests_opened : [];
+    global.cutscenes_played = variable_struct_exists(data, "cutscenes_played") ? data.cutscenes_played : [];
+
+    // --- Load follower flags ---
+    global.follower_unlocked = variable_struct_exists(data, "follower_unlocked") ? data.follower_unlocked : false;
+    global.follower_present  = variable_struct_exists(data, "follower_present")  ? data.follower_present  : false;
+
+    // ⭐ Load Rune Levels
+    global.haru_runes = variable_struct_exists(data, "haru_runes") ? data.haru_runes : [0, 0, 0];
+    global.maya_runes = variable_struct_exists(data, "maya_runes") ? data.maya_runes : [0, 0, 0];
+
+    // ⭐ NEW: Load defeated bosses
+    if (variable_struct_exists(data, "bosses")) {
+        global.bosses = data.bosses;
+    } else {
+        global.bosses = [false, false, false, false];
+    }
+
+    // ⭐ Reset spawn flag
+    global.spawn_follower_next_step = false;
+
+    // --- Spawn player safely ---
+    if (!instance_exists(obj_player)) {
+        instance_create_depth(global.load_x, global.load_y, 0, obj_player);
+    } else {
+        var inst = instance_find(obj_player, 0);
+        inst.x = global.load_x;
+        inst.y = global.load_y;
+    }
+
+    room_goto(global.load_room);
+}
+

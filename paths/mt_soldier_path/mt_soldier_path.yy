@@ -1,0 +1,18 @@
+{
+  "$GMPath":"",
+  "%Name":"mt_soldier_path",
+  "closed":false,
+  "kind":0,
+  "name":"mt_soldier_path",
+  "parent":{
+    "name":"Paths",
+    "path":"folders/Paths.yy",
+  },
+  "points":[
+    {"speed":100.0,"x":623.0,"y":281.0,},
+    {"speed":100.0,"x":511.0,"y":281.0,},
+  ],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}

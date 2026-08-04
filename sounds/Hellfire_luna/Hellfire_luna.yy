@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"Hellfire_luna",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":1.3844898,
+  "exportDir":"",
+  "name":"Hellfire_luna",
+  "parent":{
+    "name":"sound_effects",
+    "path":"folders/Sounds/sound_effects.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"Hellfire_luna.mp3",
+  "volume":1.0,
+}

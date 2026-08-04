@@ -1,0 +1,1 @@
+NewEncounter([global.enemies.Bandit, global.enemies.Bandit], bg_all);

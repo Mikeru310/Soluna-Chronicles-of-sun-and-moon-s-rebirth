@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"earth_slammer",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":2.899592,
+  "exportDir":"",
+  "name":"earth_slammer",
+  "parent":{
+    "name":"sound_effects",
+    "path":"folders/Sounds/sound_effects.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"earth_slammer.mp3",
+  "volume":1.0,
+}

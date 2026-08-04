@@ -1,0 +1,38 @@
+{
+  "$GMTileSet":"v1",
+  "%Name":"ts_Swamp_NPC_Objects_UPDATED",
+  "autoTileSets":[],
+  "macroPageTiles":{
+    "SerialiseHeight":0,
+    "SerialiseWidth":0,
+    "TileSerialiseData":[],
+  },
+  "name":"ts_Swamp_NPC_Objects_UPDATED",
+  "out_columns":12,
+  "out_tilehborder":2,
+  "out_tilevborder":2,
+  "parent":{
+    "name":"spr_ts_Swamp_Interior_Updated",
+    "path":"folders/Rooms/Main Maps with Interior/Act_3_UPDATED/spr_ts_Swamp_Interior_Updated.yy",
+  },
+  "resourceType":"GMTileSet",
+  "resourceVersion":"2.0",
+  "spriteId":{
+    "name":"spr_Swamp_NPC_Objects_UPDATED",
+    "path":"sprites/spr_Swamp_NPC_Objects_UPDATED/spr_Swamp_NPC_Objects_UPDATED.yy",
+  },
+  "spriteNoExport":false,
+  "textureGroupId":{
+    "name":"Default",
+    "path":"texturegroups/Default",
+  },
+  "tileAnimationFrames":[],
+  "tileAnimationSpeed":15.0,
+  "tileHeight":16,
+  "tilehsep":0,
+  "tilevsep":0,
+  "tileWidth":16,
+  "tilexoff":0,
+  "tileyoff":0,
+  "tile_count":136,
+}

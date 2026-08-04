@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"moonlight_purge",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":6.0,
+  "exportDir":"",
+  "name":"moonlight_purge",
+  "parent":{
+    "name":"sound_effects",
+    "path":"folders/Sounds/sound_effects.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"moonlight_purge.mp3",
+  "volume":1.0,
+}

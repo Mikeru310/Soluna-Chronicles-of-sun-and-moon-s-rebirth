@@ -1,0 +1,1 @@
+patrol_path = mt_soldier_path_3;

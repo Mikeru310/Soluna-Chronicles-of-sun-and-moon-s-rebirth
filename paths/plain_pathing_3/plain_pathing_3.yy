@@ -1,0 +1,18 @@
+{
+  "$GMPath":"",
+  "%Name":"plain_pathing_3",
+  "closed":false,
+  "kind":0,
+  "name":"plain_pathing_3",
+  "parent":{
+    "name":"update",
+    "path":"update.yyp",
+  },
+  "points":[
+    {"speed":100.0,"x":1054.0,"y":962.0,},
+    {"speed":100.0,"x":1054.0,"y":1215.0,},
+  ],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}

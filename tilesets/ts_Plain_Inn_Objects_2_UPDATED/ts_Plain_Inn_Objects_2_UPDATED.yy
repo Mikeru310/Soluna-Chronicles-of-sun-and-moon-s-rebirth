@@ -1,0 +1,38 @@
+{
+  "$GMTileSet":"v1",
+  "%Name":"ts_Plain_Inn_Objects_2_UPDATED",
+  "autoTileSets":[],
+  "macroPageTiles":{
+    "SerialiseHeight":0,
+    "SerialiseWidth":0,
+    "TileSerialiseData":[],
+  },
+  "name":"ts_Plain_Inn_Objects_2_UPDATED",
+  "out_columns":7,
+  "out_tilehborder":2,
+  "out_tilevborder":2,
+  "parent":{
+    "name":"spr_ts_Plain_Interior_Updated",
+    "path":"folders/Rooms/Main Maps with Interior/Act_2_Updated/spr_ts_Plain_Interior_Updated.yy",
+  },
+  "resourceType":"GMTileSet",
+  "resourceVersion":"2.0",
+  "spriteId":{
+    "name":"spr_Plain_Inn_Objects_2_UPDATED",
+    "path":"sprites/spr_Plain_Inn_Objects_2_UPDATED/spr_Plain_Inn_Objects_2_UPDATED.yy",
+  },
+  "spriteNoExport":false,
+  "textureGroupId":{
+    "name":"Default",
+    "path":"texturegroups/Default",
+  },
+  "tileAnimationFrames":[],
+  "tileAnimationSpeed":15.0,
+  "tileHeight":16,
+  "tilehsep":0,
+  "tilevsep":0,
+  "tileWidth":16,
+  "tilexoff":0,
+  "tileyoff":0,
+  "tile_count":45,
+}

@@ -1,0 +1,1 @@
+NewEncounter([global.enemies.Maya_VesselOfCalamity], Spr_BBG_FOREST_1);

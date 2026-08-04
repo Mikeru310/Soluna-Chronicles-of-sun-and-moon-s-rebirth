@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"Final_Quest___Protagonist",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":39.758366,
+  "exportDir":"",
+  "name":"Final_Quest___Protagonist",
+  "parent":{
+    "name":"Sounds",
+    "path":"folders/Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"Final_Quest___Protagonist.mp3",
+  "volume":1.0,
+}

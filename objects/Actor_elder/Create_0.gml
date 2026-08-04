@@ -1,0 +1,1 @@
+npc_name = "Elder Roi";
