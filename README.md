@@ -9,7 +9,7 @@
 
 ## About the Project
 
-**SolLuna: Chronicles of the Sun and Moon's Rebirth** is a single-player, 2D turn-based role-playing game set in a fantasy medieval world. It follows **Haru** and **Maya**, two protagonists bound to the powers of the Sun and Moon, as they journey through four regions — **Forest, Plains, Swamp, and Mountains** — to uncover the truth behind a spreading curse and restore balance to their world.
+**SolLuna: Chronicles of the Sun and Moon's Rebirth** is a single-player, 2D turn-based role-playing game set in a fantasy medieval world. It follows **Haru** and **Maya**, two protagonists bound to the powers of the light and dark, as they journey through four regions — **Forest, Plains, Swamp, and Mountains** — to uncover the truth behind a spreading curse and restore balance to their world.
 
 The project was developed as a capstone requirement to demonstrate effective game system integration using limited resources, blending traditional RPG mechanics with emotional, narrative-driven storytelling and a nostalgic pixel-art style.
 
